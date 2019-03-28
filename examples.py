@@ -13,4 +13,4 @@ request_class = dpamd.Request()
 secid_list = ["US1491231015","BE0974293251"]
 
 r = request_class.port_query(secid_list)
-
+r2 = request_class.port_fields()

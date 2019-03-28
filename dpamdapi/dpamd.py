@@ -5,6 +5,7 @@ Created on Wed Mar 27 14:47:42 2019
 @author: mbs
 """
 
+
 import pandas as pd
 import requests
 
@@ -17,4 +18,6 @@ class Request():
         raw = requests.post(self.api_url+'port_query', json={'isin':secid_list})
         return  pd.DataFrame().from_dict(raw.json())
 
-        
+    def port_fields(self):
+       raw = requests.post(self.api_url+'port_fields')
+       return  pd.DataFrame().from_dict(raw.json())       
