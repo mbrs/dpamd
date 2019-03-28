@@ -2,7 +2,12 @@
 
 This directory contains an interface for interacting with DPAM SSOT API services using the Python programming language. This package is the source installer.
 
-You are encouraged to install using 'pip' directly. This version is written for Python 2.7 only.
+You are encouraged to install using 'pip' directly. 
+
+pip install -i https://test.pypi.org/simple/ dpamd
+https://github.com/mbrs/dpamd/zipball/master (zip)
+
+This version is written for Python 2.7 only.
 
 More documentation can be found (intranet) on http://172.20.17.46/wiki/
 
