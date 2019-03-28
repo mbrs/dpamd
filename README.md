@@ -4,7 +4,7 @@ This directory contains an interface for interacting with DPAM SSOT API services
 
 You are encouraged to install using 'pip' directly. 
 
-pip install -i https://test.pypi.org/simple/ dpamd
+pip install -i "https://test.pypi.org/simple/ dpamd" <br>
 https://github.com/mbrs/dpamd/zipball/master (zip)
 
 This version is written for Python 2.7 only.
