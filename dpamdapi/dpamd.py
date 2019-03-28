@@ -21,3 +21,13 @@ class Request():
     def port_fields(self):
        raw = requests.post(self.api_url+'port_fields')
        return  pd.DataFrame().from_dict(raw.json())       
+
+    def list_funds(self):
+       raw = requests.get(self.api_url+'list_funds')
+       return  pd.DataFrame().from_dict(raw.json())   
+
+    def newfunddb_report(self,code):
+       raw = requests.get(self.api_url+'newfunddb_report/'+str(code))
+       return  pd.DataFrame().from_dict(raw.json())   
+
+
