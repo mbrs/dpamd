@@ -1,0 +1,8 @@
+README.md
+setup.py
+dpamd.egg-info/PKG-INFO
+dpamd.egg-info/SOURCES.txt
+dpamd.egg-info/dependency_links.txt
+dpamd.egg-info/top_level.txt
+dpamdapi/__init__.py
+dpamdapi/dpamd.py

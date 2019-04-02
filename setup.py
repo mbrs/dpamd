@@ -1,11 +1,23 @@
-from distutils.core import setup
+import setuptools
 
-setup(
-    name='dpamd',
-    version='0.1dev',
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="dpamd",
+    version="0.4dev",
 	author='MBS',
 	author_email='broes.michael@gmail.com',
-    packages=['dpamdapi'],
-    license='Copyright DPAM',
-    long_description=open('README.md').read(),
+    description="dpam data package",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/mbrs/dpamd",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 2",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
 )
+
+
