@@ -9,13 +9,17 @@ Created on Wed Mar 27 14:47:42 2019
 import pandas as pd
 import requests
 
-class Request():
+class Ssot_Request():
     
     def __init__(self):
         self.api_url = 'http://172.20.17.46/api/'
 
     def port_query(self,secid_list):
         raw = requests.post(self.api_url+'port_query', json={'isin':secid_list})
+        return  pd.DataFrame().from_dict(raw.json())
+    
+    def port_query_rating(self,secid_list):
+        raw = requests.post(self.api_url+'port_query_rating', json={'isin':secid_list})
         return  pd.DataFrame().from_dict(raw.json())
 
     def port_fields(self):

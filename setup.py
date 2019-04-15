@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dpamd",
-    version="0.4dev",
+    version="0.5dev",
 	author='MBS',
 	author_email='broes.michael@gmail.com',
     description="dpam data package",
